@@ -115,9 +115,10 @@ class GCListBoxRow: ListBoxRow {
 
             btnTest = new Button("Test");
 
-            Comment out event handler to see GC working
+            // Comment out event handler to see GC working
             btnTest.addOnClicked(delegate(Button) {
                 trace("I've been clicked");
+                lblText.setText("Clicked!");
             });
             box.add(btnTest);
 
